@@ -9,4 +9,6 @@ class Player(User):
         self.coins = coins
     def __str__(self):
         return f"{self.name}, {self.coins}, {self.id}"
+    
+
 
