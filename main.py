@@ -8,5 +8,5 @@ class Player(User):
         super().__init__(id,name)
         self.coins = coins
     def __str__(self):
-        return f"{self.name}, {self.coins}, {self.id}"
+        return f"{self.name}, {self.coins}"
 
