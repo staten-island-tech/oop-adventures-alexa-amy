@@ -10,3 +10,14 @@ class Player(User):
     def __str__(self):
         return f"{self.name}, {self.coins}"
 
+
+pokemon = []
+add_more_pokemon = "Y"
+
+while add_more_pokemon == "Y":
+    user_request = input("Would you like to add another pokemon?: ")
+    if user_request.upper() == #...
+    else:
+        print("Something went wrong, are you sure you typed the request correctly?: ")
+    still_continue = input("Would you like to continue? Y/N: ")
+    add_more_pokemon = still_continue
