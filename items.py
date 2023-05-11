@@ -8,3 +8,15 @@ class Ability_Shield(items):
         super().__int__(name, amount)
     def __str__(items):
         return f"{items.name}, {items.amount}"
+
+class Heal_Potion(items):
+    def __int__(self, name, amount):
+        super().__int__(name,amount)
+    def __str__(items):
+        return f"{items.name}, {items.amount}"
+
+class lucky_Egg(items):
+    def __int__(self, name, amount):
+        super().__int__(name,amount)
+    def __str__(items):
+        return f"{items.name}, {items.amount}"
