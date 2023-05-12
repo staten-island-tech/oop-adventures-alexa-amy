@@ -5,7 +5,7 @@ class User:
         self.pokemon = pokemon
 
 class Player(User):
-    def __init__(self, id, name, coins):
+    def __init__(self, name, coins):
         super().__init__(id,name)
         self.coins = coins
     def __str__(self):
@@ -22,7 +22,6 @@ while add_more_pokemon == "Y":
     if user_request.upper() == "Y":
         pokemon = input("Enter name of a pokemon ")
     else:
-        print("Something went wrong, are you sure you typed the request correctly? ")
-        continue  
+        print("Something went wrong, are you sure you typed the request correctly? ")  
     still_continue = input("Would you like to continue? Y/N: ")
     add_more_pokemon = still_continue
