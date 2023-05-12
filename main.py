@@ -28,6 +28,6 @@ while add_more_pokemon == "Y":
         continue  
     still_continue = input("Would you like to continue? Y/N: ")
     add_more_pokemon = still_continue
-print('your team '
+print(f"your team consists of: {pokemon}")
 
 
