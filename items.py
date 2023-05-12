@@ -38,7 +38,3 @@ class Berries:
     def __str__(items):
         return f"{items.name}, {items.amount}"
 
-
-
-    
-
