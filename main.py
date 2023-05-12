@@ -14,9 +14,6 @@ class NPC(User):
     def __int__(self, name, trainer):
         super(). __int__(name, trainer )
 
-
-
-
 pokemon = []
 add_more_pokemon = "Y"
 while add_more_pokemon == "Y":
@@ -28,5 +25,3 @@ while add_more_pokemon == "Y":
     still_continue = input("Would you like to continue? Y/N: ")
     add_more_pokemon = still_continue
 print(f"your team consists of: {pokemon}")
-
-
