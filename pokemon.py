@@ -4,6 +4,9 @@ class Pokemon:
         self.type = type
         self.ability = ability
         self.health = health
+pokemon = []
+pokemon == "A" 
+primape= fighting 
 
 
 
