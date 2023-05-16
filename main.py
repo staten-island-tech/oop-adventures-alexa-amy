@@ -47,7 +47,7 @@ team = []
 Battles = 0 
 if (Battles <= 0):
     random_pokemon = (random.randint(1,5))
-    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon}")
+    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
     if attack_request == 1:
         print("Good job! you Mr.Whalen's pokemon hp dropped by 5 ")
         time.sleep(2)
