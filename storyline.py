@@ -34,9 +34,9 @@ x = True
 while x == True:
     print("-------\nYou are a student in Mr. Whalen's pokemon training center.\nIn order to graduate you must beat him in a pokemon battle.\nHowever you don't have any pokemon to begin with.\nGo into the forest to search for some pokemon.")
     print("-------\nHere is a gift to help you: \n15x Pokeball, 5x Greatball, and 5x Sitrus Berry!\nGood luck on your journey!")
-    Forest_Request = input("-------\nWould you like to enter the Mystic Forest? Y/N: ")
+    Forest_Request = input("-------\nWould you like to enter Flourish Forest? Y/N: ")
     if Forest_Request == "Y" or "Yes":
-        print("-------\nYou enter the Mystic Forest and see many wild pokemon surrounding the area..")
+        print("-------\nYou enter the Flourish Forest and see many wild pokemon surrounding the area..")
     else:
         print("You must enter because I said so")
         still_continue = input("Would you like to continue? Y/N: ")
@@ -55,3 +55,15 @@ while x == True:
                 else:
                     print("------\nYou now have 4x Greatballs remaining")
                 print("You throw your", {pokeball_request}, "at Squirtle, but miss.")
+    user_request5 = input("Do you wish to try again? Y/N: ")
+    if user_request5 == "Y" or "Yes":
+        user_request6 = input("Pick your Pokeball: ")
+        if pokeball_request == "Pokeball":
+            print("-------\nYou now have 13x Pokeballs remaining")
+        else:
+            print("------\nYou now have 3x Greatballs remaining")
+
+    q = input("Would you like to continue? Y/N: ")
+    if (q== "Y" or q== "Yes"):
+        x = False
+        break
