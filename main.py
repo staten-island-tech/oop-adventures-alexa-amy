@@ -35,15 +35,35 @@ while add_more_pokemon == "Y":
     add_more_pokemon = still_continue
     pokemon.append(pokemon_r)
 print(f"your team consists of: {pokemon}")
-print("Ready to battle Mr.Whalen? Y/N")
-if print.upper() == "Y":
+time.sleep(2)
+user_request = input("Ready to battle Mr.Whalen? Y/N ")
+if user_request.upper() == "Y":
     print("Ready when you are ")
 else: 
     print("Well, I'm ready so you are now ") #hold 
 
 time.sleep(2)
+team = []
 Battles = 0 
-while (Battles <= 0):
-    print("1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to 
+if (Battles <= 0):
+    random_pokemon = (random.randint(1,5))
+    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
+    if attack_request == 1:
+        print("Good job! you Mr.Whalen's pokemon hp dropped by 5 ")
+        time.sleep(2)
+        print("Missed AHHAHAHA ")
+    if attack_request == 2: 
+        print("Move wasted ")
+        time.sleep(1)
+    if attack_request == 3: 
+        print("Your haling potion succeed and your pokemon gains 5 hp ")
+        time.sleep(2)
+        print("Your healing potion failed, Mr.Whalen's turn now ")
+        time.sleep(2)
+    if attack_request == 4: 
+        print(f"Which pokemon do you want to use: {team}")
+
+
+    
 
 
