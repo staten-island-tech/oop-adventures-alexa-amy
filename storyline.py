@@ -12,7 +12,7 @@
 
 # Would you like to enter the forest? Y/N
 # Y: You enter the forest, wild pokemon surround the area..
-# N:
+# N: 
 # You look around your area and notice there is a pond ahead, and a cave.
 # Would you like to go to the pond or the cave?
 # Pond: You come across a wild Squirtle and Psyduck.
