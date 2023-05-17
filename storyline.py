@@ -70,35 +70,40 @@ while x == True:
         x = False
         break """
 
-print("-------\nYou are a student in Mr. Whalen's pokemon training center.\nIn order to graduate you must beat him in a pokemon battle.")
+print("-------\nYou are a student in Mr. Whalen's pokemon training center.")
+time.sleep(2)
+print("In order to graduate you must beat him in a pokemon battle.")
 time.sleep(2)
 print("However you don't have any pokemon to begin with.")
 time.sleep(2)
 print("Go into the forest to search for some pokemon.")
 time.sleep(2)
-print("-------\nHere is a gift to help you: \n15x Pokeball, 5x Greatball, and 5x Sitrus Berry!\nGood luck on your journey!")
+print("-------\nHere is a gift to help you:")
+time.sleep(1.5)
+print("15x Pokeball, 5x Greatball, and 5x Sitrus Berry!")
 time.sleep(2)
+print("Good luck on your journey!")
+time.sleep(2)
+
 Forest_Request = input("-------\nWould you like to enter Flourish Forest? Y/N: ")
-if Forest_Request == "Y" or "Yes":
+if Forest_Request == "Y":
+    time.sleep(1)
     print("-------\nYou enter the Flourish Forest and see many wild pokemon surrounding the area..")
-else:
-    print("You must enter because I said so")
-    still_continue = input("Would you like to continue? Y/N: ")
-    Forest_Request = still_continue
-print("You look around the area and notice there is a pond ahead, and a cave.")
-user_request2 = input("Would you like to go to the pond or the cave? " )
-if user_request2 == "Pond" or "pond":
-    print("-------\nYou come across a wild Squirtle and Psyduck.")
+    time.sleep(2)
+    print("You look around the area and notice there is a pond ahead, and a cave.")
+    user_request2 = input("Would you like to go to the pond or the cave? " )
+    if user_request2 == "Pond" or "pond":
+        print("-------\nYou come across a wild Squirtle and Psyduck.")
     user_request3 = input("Do you want to attempt at catching one? Y/N: ")
-if user_request3 == "Y" or "Yes":
-    user_request4 = input("Which one do you want to catch? ")
-if user_request4 == "Squirtle" or "squirtle":
-    pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
-if pokeball_request == "Pokeball":
-    print("-------\nYou now have 14x Pokeballs remaining")
-else:
-    print("------\nYou now have 4x Greatballs remaining")
-    print("You throw your", {pokeball_request}, "at Squirtle, but miss.")
+    if user_request3 == "Y" or "Yes":
+        user_request4 = input("Which one do you want to catch? ")
+    if user_request4 == "Squirtle" or "squirtle":
+        pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
+    if pokeball_request == "Pokeball":
+        print("-------\nYou now have 14x Pokeballs remaining")
+    else:
+        print("------\nYou now have 4x Greatballs remaining")
+        print("You throw your", {pokeball_request}, "at Squirtle, but miss.")
     user_request5 = input("Do you wish to try again? Y/N: ")
     if user_request5 == "Y" or "Yes":
         user_request6 = input("Pick your Pokeball: ")
@@ -106,3 +111,7 @@ else:
             print("-------\nYou now have 13x Pokeballs remaining")
         else:
             print("------\nYou now have 3x Greatballs remaining")
+else:
+    print("You must enter because I said so :)")
+continue1 = input("Would you like to continue? Y/N: ")
+Forest_Request = continue1
