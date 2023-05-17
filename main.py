@@ -43,7 +43,7 @@ else:
     print("Well, I'm ready so you are now ") #hold 
 
 time.sleep(2)
-team = []
+team = [pokemon]
 Battles = 0 
 attack_request = "1", "2", "3", "4"
 if (Battles <= 0):
@@ -63,11 +63,15 @@ if (Battles <= 0):
         time.sleep(2)
     if attack_request == "4": 
         print(f"Which pokemon do you want to use: {team}")
-    else:
-        print("Are you sure you chose a correct option? Enter again ")
+        time.sleep(5)
+        attack_request.upper = print(f"Detected, now switching to {team}")
+else:
+    print("Are you sure you chose a correct option? Enter again ")
     still_continue = input("What attack method do you want? ")
     attack_request = still_continue
-    
+    return attack_request
+
+
 
 
     
