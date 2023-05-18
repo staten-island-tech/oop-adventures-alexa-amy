@@ -85,8 +85,9 @@ time.sleep(2)
 print("Good luck on your journey!")
 time.sleep(2)
 
+r = ["Y", "y", "Yes", "yes"]
 Forest_Request = input("-------\nWould you like to enter Flourish Forest? Y/N: ")
-if Forest_Request == "Y":
+if Forest_Request in r:
     time.sleep(1)
     print("-------\nYou enter the Flourish Forest and see many wild pokemon surrounding the area..")
     time.sleep(2)
@@ -94,11 +95,14 @@ if Forest_Request == "Y":
     user_request2 = input("Would you like to go to the pond or the cave? " )
     if user_request2 == "Pond" or "pond":
         print("-------\nYou come across a wild Squirtle and Psyduck.")
-    user_request3 = input("Do you want to attempt at catching one? Y/N: ")
-    if user_request3 == "Y" or "Yes":
+        user_request3 = input("Do you want to attempt at catching one? Y/N: ")
+    
+
+if user_request3 == "Y" or "Yes":
         user_request4 = input("Which one do you want to catch? ")
-    if user_request4 == "Squirtle" or "squirtle":
-        pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
+
+if user_request4 == "Squirtle" or "squirtle":
+    pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
     if pokeball_request == "Pokeball":
         print("-------\nYou now have 14x Pokeballs remaining")
     else:
@@ -113,5 +117,5 @@ if Forest_Request == "Y":
             print("------\nYou now have 3x Greatballs remaining")
 else:
     print("You must enter because I said so :)")
-continue1 = input("Would you like to continue? Y/N: ")
-Forest_Request = continue1
+    continue1 = input("Would you like to continue? Y/N: ")
+    Forest_Request = continue1
