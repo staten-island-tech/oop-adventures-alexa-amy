@@ -24,9 +24,12 @@ if Forest_Request in r:
     print("You look around the area and notice there is a pond ahead, and a cave.")
     time.sleep(1.5)
     user_request2 = input("Would you like to go to the pond or the cave? " )
-    time.sleep(1.5)
-    from Pond import *
-    Pond = Pond_Option()
+    if user_request2 == "Cave" or "cave":
+        from Cave import *
+        Cave = Cave_Option()
+    else:
+        from Pond import *
+        Pond = Pond_Option()
 else:
     print("You must enter because I said so :)")
     continue1 = input("Would you like to continue? Y/N: ")
