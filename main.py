@@ -44,15 +44,15 @@ else:
 
 time.sleep(2)
 team = [pokemon]
+switch = [pokemon]
 Battles = 0 
 user_health = 100 
 attack_request = "1", "2", "3", "4"
-if (Battles <= 1):
-    random_pokemon = (random.randint(1,5))
+while (Battles <= 1):
+    random_pokemon = (random.randint("primeape, snorlax"))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
     if attack_request == "1":
-       
-        random.randint((1,2))
+        print(random.randint(choice_1, choice_2))
         choice_1 = print("Good job! you Mr.Whalen's pokemon hp dropped by 5 ")
         time.sleep(2)
         choice_2 = print("Missed AHHAHAHA ")
@@ -66,8 +66,8 @@ if (Battles <= 1):
         time.sleep(2)
     if attack_request == "4": 
         print(f"Which pokemon do you want to use: {team}")
-        time.sleep(5)
-        attack_request.upper = print(f"Detected, now switching to {team}")
+        time.sleep(3)
+        attack_request = print(f"Detected, now switching to {switch}")
 else:
     print("Are you sure you chose a correct option? Enter again ")
     still_continue = input("What attack method do you want? ")
