@@ -4,13 +4,13 @@ class Pond_Option:
     def __init__(self):
         print("")
     user_request2 = input("Would you like to go to the pond or the cave? " )
-    while x == True:
-        q = input("It seems you made a mistake. Please try again: ")
-        if user_request2 == "Pond" or "pond":
-            x = False
-            break
+    if user_request2 == "Pond" or "pond":
         print("-------\nYou come across a wild Squirtle and Psyduck.")
-    user_request3 = input("Do you want to attempt at catching one? Y/N: ")
+        user_request3 = input("Do you want to attempt at catching one? Y/N: ")
+    else:
+        print("Something went wrong. Please try again")  
+    still_continue = input("Would you like to go to the pond or the cave? ")
+    user_request2 = still_continue
     if user_request3 in r:
         user_request4 = input("Which one do you want to catch? ")
     if user_request4 == "Squirtle" or "squirtle":
