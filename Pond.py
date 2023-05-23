@@ -1,29 +1,61 @@
+import time
+
 r = ["Y", "y", "Yes", "yes"]
+squirtle = ["Squirtle", "squirtle"]
+psyduck = ["Psyduck", "psyduck"]
+pokeball = ["Pokeball", "pokeball"]
 x = True
-class Pond_Option:
+
+class Pond_Option():
     def __init__(self):
-        print("")
-    user_request2 = input("Would you like to go to the pond or the cave? " )
-    if user_request2 == "Pond" or "pond":
-        print("-------\nYou come across a wild Squirtle and Psyduck.")
-        user_request3 = input("Do you want to attempt at catching one? Y/N: ")
-    else:
-        print("Something went wrong. Please try again")  
-    still_continue = input("Would you like to go to the pond or the cave? ")
-    user_request2 = still_continue
+        print("Pond has been selected")
+    print("-------\nAs you walk around the forest, you see a pond nearby.")
+    time.sleep(1.5)
+    print("As you walk closer, you come across a wild Squirtle and Psyduck.")
+    user_request3 = input("Do you want to attempt at catching one? Y/N: ")
     if user_request3 in r:
         user_request4 = input("Which one do you want to catch? ")
-    if user_request4 == "Squirtle" or "squirtle":
-        pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
-    if pokeball_request == "Pokeball":
-        print("-------\nYou now have 14x Pokeballs remaining")
+        if user_request4 in squirtle:
+            pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
+            if pokeball_request in pokeball:
+                print("-------\nYou now have 14x Pokeballs remaining")
+            else:
+                print("------\nYou now have 4x Greatballs remaining")
+            print("You throw your",pokeball_request, "at Squirtle, but miss.")
+            user_request5 = input("Do you wish to try again? Y/N: ")
+            if user_request5 in r:
+                user_request6 = input("Pick your Pokeball: ")
+            if user_request6 in pokeball:
+                print("-------\nYou now have 13x Pokeballs remaining")
+            else:
+                print("------\nYou now have 3x Greatballs remaining")
+            print("You throw your",user_request6, "at Squirtle..")
+            time.sleep(1.5)
+            print("...")
+            time.sleep(1.5)
+            print("You have successfully captured Squirtle!")
+        else:
+            if user_request4 in psyduck:
+                pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
+                if pokeball_request in pokeball:
+                    print("-------\nYou now have 14x Pokeballs remaining")
+                else:
+                    print("------\nYou now have 4x Greatballs remaining")
+                print("You throw your",pokeball_request, "at Psyduck, but miss.")
+                user_request5 = input("Do you wish to try again? Y/N: ")
+                if user_request5 in r:
+                    user_request6 = input("Pick your Pokeball: ")
+                if user_request6 in pokeball:
+                    print("-------\nYou now have 13x Pokeballs remaining")
+                else:
+                    print("------\nYou now have 3x Greatballs remaining")
+                print("You throw your",user_request6, "at Psyduck..")
+                time.sleep(1.5)
+                print("...")
+                time.sleep(1.5)
+                print("You have successfully captured Psyduck!")
     else:
-        print("------\nYou now have 4x Greatballs remaining")
-    print("You throw your", {pokeball_request}, "at Squirtle, but miss.")
-    user_request5 = input("Do you wish to try again? Y/N: ")
-    if user_request5 == "Y" or "Yes":
-        user_request6 = input("Pick your Pokeball: ")
-    if pokeball_request == "Pokeball":
-        print("-------\nYou now have 13x Pokeballs remaining")
-    else:
-        print("------\nYou now have 3x Greatballs remaining")
+        while x == True:
+            q = input("It seems you made a mistake. Please try again: ")
+            if q in r:
+                x = False
