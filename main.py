@@ -1,20 +1,5 @@
 import time
 import random
-class User:
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
-
-class Player(User):
-    def __init__(self, name, coins):
-        super().__init__(id,name)
-        self.coins = coins
-    def __str__(self):
-        return f"{self.name}, {self.coins}"
-
-class NPC(User):
-    def __int__(self, name, trainer):
-        super(). __int__(name, trainer )
 
 print('Hello trainee, what a thrilling day to be out here with your battles ')
 time.sleep(2)
@@ -34,13 +19,15 @@ while add_more_pokemon == "Y":
     still_continue = input("Would you like to continue? Y/N: ")
     add_more_pokemon = still_continue
     pokemon.append(pokemon_r)
-print(f"your team consists of: {pokemon}")
+print(f"your team consists of:",pokemon)
 time.sleep(2)
 user_request = input("Ready to battle Mr.Whalen? Y/N ")
 if user_request.upper() == "Y":
     print("Ready when you are ")
 else: 
-    print("Well, I'm ready so you are now ") #hold 
+    print("Well, I'm ready so you are now ")
+
+#hold 
 
 time.sleep(2)
 team = [pokemon]
@@ -49,7 +36,7 @@ user_health = 100
 attack_request = "1", "2", "3", "4"
 if (Battles <= 1):
     random_pokemon = (random.randint(1,5))
-    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
+    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's",random_pokemon, "2) Abide 3) healing 4)Switch to {pokemon}")
     if attack_request == "1":
        
         random.randint((1,2))
@@ -65,9 +52,9 @@ if (Battles <= 1):
         print("Your healing potion failed, Mr.Whalen's turn now ")
         time.sleep(2)
     if attack_request == "4": 
-        print(f"Which pokemon do you want to use: {team}")
+        print(f"Which pokemon do you want to use:",team)
         time.sleep(5)
-        attack_request.upper = print(f"Detected, now switching to {team}")
+        attack_request.upper = print(f"Detected, now switching to",team)
 else:
     print("Are you sure you chose a correct option? Enter again ")
     still_continue = input("What attack method do you want? ")
