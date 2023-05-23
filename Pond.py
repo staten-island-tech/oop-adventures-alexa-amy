@@ -1,4 +1,7 @@
 import time
+a = 1
+b = 1.5
+c = 2
 
 r = ["Y", "y", "Yes", "yes"]
 squirtle = ["Squirtle", "squirtle"]
@@ -10,7 +13,7 @@ class Pond_Option():
     def __init__(self):
         print("Pond has been selected")
     print("-------\nAs you walk around the forest, you see a pond nearby.")
-    time.sleep(1.5)
+    time.sleep(b)
     print("As you walk closer, you come across a wild Squirtle and Psyduck.")
     user_request3 = input("Do you want to attempt at catching one? Y/N: ")
     if user_request3 in r:
@@ -30,9 +33,9 @@ class Pond_Option():
             else:
                 print("------\nYou now have 3x Greatballs remaining")
             print("You throw your",user_request6, "at Squirtle..")
-            time.sleep(1.5)
+            time.sleep(b)
             print("...")
-            time.sleep(1.5)
+            time.sleep(b)
             print("You have successfully captured Squirtle!")
         else:
             if user_request4 in psyduck:
@@ -50,9 +53,9 @@ class Pond_Option():
                 else:
                     print("------\nYou now have 3x Greatballs remaining")
                 print("You throw your",user_request6, "at Psyduck..")
-                time.sleep(1.5)
+                time.sleep(b)
                 print("...")
-                time.sleep(1.5)
+                time.sleep(b)
                 print("You have successfully captured Psyduck!")
     else:
         while x == True:
