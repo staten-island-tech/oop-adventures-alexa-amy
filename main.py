@@ -1,11 +1,5 @@
 import time
-<<<<<<< HEAD
 import random
-=======
-<<<<<<< HEAD
-import random
-=======
->>>>>>> 66de6d64487e9c107aa380be0a8fe21d53992692
 x=1 
 y= 2
 z = 3
@@ -24,7 +18,6 @@ class Player(User):
 class NPC(User):
     def __int__(self, name, trainer):
         super(). __int__(name, trainer )
->>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
 
 print('Hello trainee, what a thrilling day to be out here with your battles ')
 time.sleep(y)
@@ -44,13 +37,8 @@ while add_more_pokemon == "Y":
     still_continue = input("Would you like to continue? Y/N: ")
     add_more_pokemon = still_continue
     pokemon.append(pokemon_r)
-<<<<<<< HEAD
-print(f"your team consists of:",pokemon)
-time.sleep(2)
-=======
 print(f"your team consists of: {pokemon}")
 time.sleep(y)
->>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
 user_request = input("Ready to battle Mr.Whalen? Y/N ")
 if user_request.upper() == "Y":
     print("Ready when you are ")
@@ -65,28 +53,16 @@ switch = [pokemon]
 Battles = 0 
 user_health = 100 
 attack_request = "1", "2", "3", "4"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 if (Battles <= 1):
     random_pokemon = (random.randint(1,5))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's",random_pokemon, "2) Abide 3) healing 4)Switch to {pokemon}")
-=======
 pchoice= ["Primeape" ,"Snorlax"]
 while (Battles <= 1):
     (random.choice(pchoice))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {pchoice} 2) Abide 3) healing 4)Switch to {pokemon} ")
->>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
-=======
 while (Battles <= 1):
     random_pokemon = (random.randint(1,5))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
->>>>>>> parent of 50e49b8 (Update main.py)
-=======
-while (Battles <= 1):
-    random_pokemon = (random.randint(1,5))
-    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
->>>>>>> parent of 50e49b8 (Update main.py)
     if attack_request == "1":
         print(random.randint(choice_1, choice_2))
         choice_1 = print("Good job! you Mr.Whalen's pokemon hp dropped by 5 ")
@@ -101,15 +77,9 @@ while (Battles <= 1):
         print("Your healing potion failed, Mr.Whalen's turn now ")
         time.sleep(y)
     if attack_request == "4": 
-<<<<<<< HEAD
-        print(f"Which pokemon do you want to use:",team)
-        time.sleep(5)
-        attack_request.upper = print(f"Detected, now switching to",team)
-=======
         print(f"Which pokemon do you want to use: {team}")
         time.sleep(z)
         attack_request = print(f"Detected, now switching to {switch}")
->>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
 else:
     print("Are you sure you chose a correct option? Enter again ")
     still_continue = input("What attack method do you want? ")
