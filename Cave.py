@@ -1,5 +1,7 @@
 import time
-from Pond import *
+a = 1
+b = 1.5
+c = 2
 
 r = ["Y", "y", "Yes", "yes"]
 zubat = ["Zubat", "zubat"]
@@ -30,9 +32,9 @@ class Cave_Option():
             else:
                 print("------\nYou now have 3x Greatballs remaining")
             print("You throw your",user_request6, "at Zubat..")
-            time.sleep(1.5)
+            time.sleep(b)
             print("...")
-            time.sleep(1.5)
+            time.sleep(b)
             print("You have successfully captured Zubat!")
         else:
             if user_request4 in gastly:
@@ -50,9 +52,9 @@ class Cave_Option():
                 else:
                     print("------\nYou now have 3x Greatballs remaining")
                 print("You throw your",user_request6, "at Gastly..")
-                time.sleep(1.5)
+                time.sleep(b)
                 print("...")
-                time.sleep(1.5)
+                time.sleep(b)
                 print("You have successfully captured Gastly!")
     else:
         while x == True:
