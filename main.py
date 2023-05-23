@@ -2,6 +2,10 @@ import time
 <<<<<<< HEAD
 import random
 =======
+<<<<<<< HEAD
+import random
+=======
+>>>>>>> 66de6d64487e9c107aa380be0a8fe21d53992692
 x=1 
 y= 2
 z = 3
@@ -69,7 +73,7 @@ if (Battles <= 1):
 =======
 pchoice= ["Primeape" ,"Snorlax"]
 while (Battles <= 1):
-    print(random.choice(pchoice))
+    (random.choice(pchoice))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {pchoice} 2) Abide 3) healing 4)Switch to {pokemon} ")
 >>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
 =======
