@@ -1,4 +1,5 @@
 import time
+import random
 x=1 
 y= 2
 z = 3
@@ -52,7 +53,7 @@ user_health = 100
 attack_request = "1", "2", "3", "4"
 pchoice= ["Primeape" ,"Snorlax"]
 while (Battles <= 1):
-    print(random.choice(pchoice))
+    (random.choice(pchoice))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {pchoice} 2) Abide 3) healing 4)Switch to {pokemon} ")
     if attack_request == "1":
         print(random.randint(choice_1, choice_2))
