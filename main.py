@@ -67,6 +67,7 @@ user_health = 100
 attack_request = "1", "2", "3", "4"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (Battles <= 1):
     random_pokemon = (random.randint(1,5))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's",random_pokemon, "2) Abide 3) healing 4)Switch to {pokemon}")
@@ -76,6 +77,11 @@ while (Battles <= 1):
     (random.choice(pchoice))
     attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {pchoice} 2) Abide 3) healing 4)Switch to {pokemon} ")
 >>>>>>> 50e49b80716b72007137d4c0b1103529f9031cfc
+=======
+while (Battles <= 1):
+    random_pokemon = (random.randint(1,5))
+    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
+>>>>>>> parent of 50e49b8 (Update main.py)
 =======
 while (Battles <= 1):
     random_pokemon = (random.randint(1,5))
