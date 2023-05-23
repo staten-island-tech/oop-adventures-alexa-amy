@@ -50,9 +50,10 @@ switch = [pokemon]
 Battles = 0 
 user_health = 100 
 attack_request = "1", "2", "3", "4"
+pchoice= ["Primeape" ,"Snorlax"]
 while (Battles <= 1):
-    random_pokemon = (random.randint(1,5))
-    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {random_pokemon} 2) Abide 3) healing 4)Switch to {pokemon} ")
+    print(random.choice(pchoice))
+    attack_request = input(f"Choose your move Trainee: 1) attack Mr.Whalen's {pchoice} 2) Abide 3) healing 4)Switch to {pokemon} ")
     if attack_request == "1":
         print(random.randint(choice_1, choice_2))
         choice_1 = print("Good job! you Mr.Whalen's pokemon hp dropped by 5 ")
@@ -77,11 +78,11 @@ else:
     
 if (user_health) == 0:
     print("Mr.Whalen: HAAHWAH I WON! ")
-    time.sleep(1)
+    time.sleep(x)
     print("Better next time, trainee ")
 
 if (Battles >= 1):
     print("Mr.Whalen: Oh man you beat my pokemons, see ya next time trainee! ")
-    time.sleep(1)
+    time.sleep(x)
     print("Good job trainee! Until next time, your next adventure awaits ")
 
