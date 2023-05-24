@@ -9,6 +9,7 @@ squirtle = ["Squirtle", "squirtle"]
 psyduck = ["Psyduck", "psyduck"]
 pokeball = ["Pokeball", "pokeball"]
 greatball = ["Greatball", "greatball"]
+
 x = True
 
 def Pond():
@@ -38,7 +39,8 @@ def Pond():
             time.sleep(b)
             print("You have successfully captured Squirtle!")
             #
-            print("")
+            forest_return = input("Would you like to return to the forest?Y/N: ")
+            
         else:
             if user_request4 in psyduck:
                 pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
