@@ -3,21 +3,7 @@ import random
 x = 1 
 y = 2
 z = 3
-class User:
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
 
-class Player(User):
-    def __init__(self, name, coins):
-        super().__init__(id,name)
-        self.coins = coins
-    def __str__(self):
-        return f"{self.name}, {self.coins}"
-
-class NPC(User):
-    def __int__(self, name, trainer):
-        super(). __int__(name, trainer )
 print('Hello trainee, what a thrilling day to be out here with your battles ')
 time.sleep(y)
 user_input = input('Well then, want to battle it out to earn EXP? ')
