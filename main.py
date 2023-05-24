@@ -1,7 +1,7 @@
 import time
 import random
-x=1 
-y= 2
+x = 1 
+y = 2
 z = 3
 class User:
     def __init__(self, id, name):
