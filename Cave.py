@@ -4,14 +4,14 @@ b = 1.5
 c = 2
 
 r = ["Y", "y", "Yes", "yes"]
+g = ["N", "n", "No", "no"]
 zubat = ["Zubat", "zubat"]
 gastly = ["Gastly", "gastly"]
 pokeball = ["Pokeball", "pokeball"]
+greatball = ["Greatball", "greatball"]
 x = True
 
-class Cave_Option():
-    def __init__(self):
-        print("Cave has been selected")
+def Cave():
     print("-------\nYou enter the dark and gloomy cave.")
     print("As you turn a corner, you encounter a wild Zubat and Gastly")
     user_request3 = input("Do you want to attempt at catching one? Y/N: ")
@@ -61,3 +61,4 @@ class Cave_Option():
             q = input("It seems you made a mistake. Please try again: ")
             if q in r:
                 x = False
+Cave()

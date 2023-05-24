@@ -4,14 +4,14 @@ b = 1.5
 c = 2
 
 r = ["Y", "y", "Yes", "yes"]
+g = ["N", "n", "No", "no"]
 squirtle = ["Squirtle", "squirtle"]
 psyduck = ["Psyduck", "psyduck"]
 pokeball = ["Pokeball", "pokeball"]
+greatball = ["Greatball", "greatball"]
 x = True
 
-class Pond_Option():
-    def __init__(self):
-        print("Pond has been selected")
+def Pond():
     print("-------\nAs you walk around the forest, you see a pond nearby.")
     time.sleep(b)
     print("As you walk closer, you come across a wild Squirtle and Psyduck.")
@@ -37,6 +37,8 @@ class Pond_Option():
             print("...")
             time.sleep(b)
             print("You have successfully captured Squirtle!")
+            #
+            print("")
         else:
             if user_request4 in psyduck:
                 pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
@@ -62,3 +64,4 @@ class Pond_Option():
             q = input("It seems you made a mistake. Please try again: ")
             if q in r:
                 x = False
+Pond()
