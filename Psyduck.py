@@ -10,7 +10,7 @@ cave_return = ["Cave", "cave"]
 x = True
 inventory = []
 
-def Psyduck():
+def Psyduck_Option():
     pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
     if pokeball_request in pokeball:
         print("-------\nYou now have 14x Pokeballs remaining")
@@ -21,7 +21,7 @@ def Psyduck():
     else:   
         while x == True:
             q = input("Looks like something went wrong. Would you like to continue? Y/N: ")
-            if (q== "N" or q== "No" or q=="n" or q=="no"):
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
                 x = False
                 break
     
@@ -40,4 +40,4 @@ def Psyduck():
         time.sleep(1.5)
         print("You have successfully captured Psyduck!")
         inventory.append("Psyduck")
-Psyduck()
+Psyduck_Option()
