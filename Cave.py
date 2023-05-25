@@ -1,5 +1,10 @@
 import time
-a = 1
+#new
+
+
+
+#old
+""" a = 1
 b = 1.5
 c = 2
 
@@ -61,4 +66,4 @@ def Cave():
             q = input("It seems you made a mistake. Please try again: ")
             if q in r:
                 x = False
-Cave()
+Cave() """
