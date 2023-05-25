@@ -3,6 +3,7 @@ a = 1
 b = 1.5
 c = 2
 
+#import user then below
 print("-------\nYou are a student in Mr. Whalen's pokemon training center.")
 time.sleep(c)
 print("In order to graduate you must beat him in a pokemon battle.")
