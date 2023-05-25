@@ -7,7 +7,7 @@ psyduck = ["Psyduck", "psyduck"]
 zubat = ["Zubat", "zubat"]
 gastly = ["Gastly", "gastly"]
 feeding = ["Feed", "Feeding", "feed", "feeding",]
-list1 = ["Your {inventory} was uncomfortable..", "Your {inventory} enjoyed that!"]
+list1 = ["Your Pokemon was uncomfortable..", "Your Pokemon enjoyed that!"]
 list2 = ["Stats: +100 defense", "Stats: +15 defense", "Stats: +20 attack", "Stats:"]
 aff_points = 0
 x = True
@@ -27,8 +27,7 @@ class Pokemon_Refresh():
         care_request = input("Which item would you like to use?: ")
         if care_request == "Comb" or "comb":
             print(random.choice(list1))
-            from Cave import inventory
-            if random.choice(list1) == "Your {inventory} was uncomfortable..":
+            if random.choice(list1) == "Your Pokemon was uncomfortable..":
                 print("Stats: -10 in defense")
                 aff_points = aff_points - 10
                 print("Current number of affection points:",aff_points)
