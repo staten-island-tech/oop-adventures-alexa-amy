@@ -9,7 +9,7 @@ pokeball = ["Pokeball", "pokeball"]
 x = True
 inventory = []
 
-def Pond():
+def Pond_Option():
     time.sleep(1.5)
     print("As you walk closer, you come across a wild Squirtle and Psyduck.")
     user_request3 = input("Do you want to attempt at catching one? Y/N: ")
@@ -19,13 +19,13 @@ def Pond():
         if choice1 in squirtle:
             from Squirtle import Squirtle
         else:
-            return Pond()
+            return Pond_Option()
     if user_request3 in g:
         choice2 = input("Return to Cave? Y/N: ")
         if choice2 in r:
             from Cave import Cave
         else:
-            return Pond()
+            return Pond_Option()
     else:
         x = True    
         while x == True:
@@ -33,7 +33,7 @@ def Pond():
             if (q== "N" or q== "No" or q=="n" or q=="no"):
                 x = False
                 break
-Pond()
+Pond_Option()
 
 """ #old
 a = 1
