@@ -29,5 +29,3 @@ class Snorlax(Pokemon):
 # Butterfree(Flying), Dartix(Flying)
 # Bulbasaur(Grass), Exeggcute(Grass)
 # Wobbluffet(Psychic), Ponyta(Psychic)
-# 
-
