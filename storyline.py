@@ -31,8 +31,7 @@ if Forest_Request in r:
     user_request2 = input("Would you like to go to the pond or the cave? ")
     if user_request2 in c:
         from Cave import Cave_Option
-        from PokemonRefresh import *
-        PokemonRefresh = Pokemon_Refresh
+        from PokemonRefresh import Pokemon_Refresh
     else:
         from Pond import Pond_Option
         from PokemonRefresh import Pokemon_Refresh
