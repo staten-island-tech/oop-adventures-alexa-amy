@@ -1,5 +1,4 @@
 import time
-#new
 
 r = ["Y", "y", "Yes", "yes"]
 g = ["N", "No", "n", "no"]
@@ -20,86 +19,22 @@ def Cave_Option():
         choice1 = input("which one do you want to catch? ")
         print(choice1)
         if choice1 in zubat:
-            from Zubat import Zubat
+            from Zubat import Zubat_Option
+            print(Zubat_Option)
         else:
             return Cave_Option()
     if user_request3 in g:
         choice2 = input("Return to pond? Y/N: ")
         if choice2 in r:
             from Pond import Pond_Option
+            print(Pond_Option)
         else:
             return Cave_Option()
     else:
         x = True
         while x == True:
             q = input("Looks like something went wrong. Would you like to continue? Y/N: ")
-            if (q== "N" or q== "No" or q=="n" or q=="no"):
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
                 x = False
-                break
-Cave_Option()
-
-
-#old
-""" a = 1
-b = 1.5
-c = 2
-
-r = ["Y", "y", "Yes", "yes"]
-g = ["N", "n", "No", "no"]
-zubat = ["Zubat", "zubat"]
-gastly = ["Gastly", "gastly"]
-pokeball = ["Pokeball", "pokeball"]
-greatball = ["Greatball", "greatball"]
-x = True
-
-def Cave():
-    print("-------\nYou enter the dark and gloomy cave.")
-    print("As you turn a corner, you encounter a wild Zubat and Gastly")
-    user_request3 = input("Do you want to attempt at catching one? Y/N: ")
-    if user_request3 in r:
-        user_request4 = input("Which one do you want to catch? ")
-        if user_request4 in zubat:
-            pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
-            if pokeball_request in pokeball:
-                print("-------\nYou now have 14x Pokeballs remaining")
-            else:
-                print("------\nYou now have 4x Greatballs remaining")
-            print("You throw your",pokeball_request, "at Zubat, but miss.")
-            user_request5 = input("Do you wish to try again? Y/N: ")
-            if user_request5 in r:
-                user_request6 = input("Pick your Pokeball: ")
-            if user_request6 in pokeball:
-                print("-------\nYou now have 13x Pokeballs remaining")
-            else:
-                print("------\nYou now have 3x Greatballs remaining")
-            print("You throw your",user_request6, "at Zubat..")
-            time.sleep(b)
-            print("...")
-            time.sleep(b)
-            print("You have successfully captured Zubat!")
-        else:
-            if user_request4 in gastly:
-                pokeball_request = input("Pick a pokeball: Pokeball or Greatball: ")
-                if pokeball_request in pokeball:
-                    print("-------\nYou now have 14x Pokeballs remaining")
-                else:
-                    print("------\nYou now have 4x Greatballs remaining")
-                print("You throw your",pokeball_request, "at Gastly, but miss.")
-                user_request5 = input("Do you wish to try again? Y/N: ")
-                if user_request5 in r:
-                    user_request6 = input("Pick your Pokeball: ")
-                if user_request6 in pokeball:
-                    print("-------\nYou now have 13x Pokeballs remaining")
-                else:
-                    print("------\nYou now have 3x Greatballs remaining")
-                print("You throw your",user_request6, "at Gastly..")
-                time.sleep(b)
-                print("...")
-                time.sleep(b)
-                print("You have successfully captured Gastly!")
-    else:
-        while x == True:
-            q = input("It seems you made a mistake. Please try again: ")
-            if q in r:
-                x = False
-Cave() """
+                return Cave_Option()
+print(Cave_Option())
