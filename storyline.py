@@ -43,6 +43,10 @@ def Forest_Start():
             print(Forest_Start())
     else:
         print("You must enter because I said so :)")
-        continue1 = input("Would you like to continue? Y/N: ")
-        Forest_Request = continue1
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Forest_Start()
 print(Forest_Start())
