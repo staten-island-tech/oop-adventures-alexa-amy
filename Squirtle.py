@@ -10,6 +10,7 @@ cave_return = ["Cave", "cave"]
 inventory = []
 x = True
 
+
 def Squirtle_Option():
     pokeball_request = input("Pick a pokeball - Pokeball or Greatball: ")
     if pokeball_request in pokeball:
@@ -49,10 +50,12 @@ def Squirtle_Option():
         choice2 = input("Want to catch Psyduck instead or go to the Cave?\nType 'Psyduck' for Psyduck or 'Cave' for Cave: ")
         if choice2 in psyduck:
             from Psyduck import Psyduck_Option
+            print(Psyduck_Option)
         else:
             return Squirtle_Option()
         if choice2 in cave_return:
             from Cave import Cave_Option
+            print(Cave_Option)
         else:
             return Squirtle_Option()
-Squirtle_Option()
+print(Squirtle_Option())
