@@ -46,7 +46,7 @@ else:
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
     user_request2 = input("     Would you like to purchase this item? ")
-    if user_request2.upper() == Y:
+    if user_request2.upper() in Y:
         print(f"Current coins amount is" , coins - 25 )
     
 """ if purchase in Berries:
