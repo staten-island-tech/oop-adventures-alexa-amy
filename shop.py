@@ -35,22 +35,24 @@ def Go_Shop():
     if user_request1 in N:
         print("Don't waste time here then ")
         print("Go catch them all! ")
+Go_Shop()
 
 purchase = input("Enter what you would like to purchase ")
-if purchase in Ability_Shield:
-    print("Returning to shop ... ")
-    time.sleep(z)
-    print(user_request1)
-else: 
-    print(" You have selected an Ability Shield")
+if purchase in Ability_Shield: 
+    print("You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
     user_request2 = input("     Would you like to purchase this item? ")
-    if user_request2.upper() == Y:
-        print(f"Current coins amount is" , coins - 25 )
+    if user_request2.upper() in Y:
+        print(f"Current coins amount is", coins - 25 )
     else:
         print(user_request1)
-    
+else:
+    print("Returning to shop ... ")
+    time.sleep(z)
+    print(user_request1)
+
+"""     
 if purchase in Berries:
     print("Returning to shop ... ")
     time.sleep(z)
@@ -111,5 +113,6 @@ else:
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
-""" pokeballs = print(" You have selected Pokeball ") """
+pokeballs = print(" You have selected Pokeball ")
 
+ """
