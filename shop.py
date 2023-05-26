@@ -32,7 +32,7 @@ def Go_Shop():
         print(" 5)  Lucky Egg ")
         print(" 6)  Pokeball (Normal)")
         time.sleep(y) 
-    else:
+    if user_request1 in N:
         print("Don't waste time here then ")
         print("Go catch them all! ")
 
@@ -48,30 +48,27 @@ else:
     user_request2 = input("     Would you like to purchase this item? ")
     if user_request2.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
-    else:
-        print(user_request1)
     
-if purchase in Berries:
-    print("Returning to shop ... ")
-    time.sleep(z)
-    print(user_request1)
-    time.sleep(y)
-else: 
+""" if purchase in Berries:
     print(" You have selected berries ")
     print("     Use: Berries are a helpful source of healing for your pokemon, improving the overall stats. ")
     print("     Amount: 25 coins ")
     user_request3= input("     Would you like to purchase this item? ")
     if user_request3.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
-if purchase in Food:
-    
 else: 
+    print("Returning to shop ... ")
+    time.sleep(z)
+    print(user_request1)
+    time.sleep(y)
+if purchase in Food:
     print(" You have selected food")
     print("     Use: Food is good for maintaing  ")
     print("     Amount: 25 coins ")
     user_request4 = input("     Would you like to purchase this item? ")
     if user_request4.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
+else: 
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
@@ -111,5 +108,5 @@ else:
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
-""" pokeballs = print(" You have selected Pokeball ") """
+pokeballs = print(" You have selected Pokeball ") """
 
