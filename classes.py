@@ -1,5 +1,10 @@
 class User:
-    def __init__(self, name, inventory, coins):
-        self.name = input("Hello trainer! What's your name?: ")
-        self.inventory = inventory
+    def __init__(self, name, coins):
+        self.name = name
         self.coins = coins
+
+    def trainer(self):
+        print("-------\nHello {}!".format(self.name))
+        print("You currently have {} coins!".format(self.coins))
+person = User(input("What is your name?: "), 100)
+person.trainer()
