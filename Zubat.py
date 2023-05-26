@@ -50,10 +50,12 @@ def Zubat_Option():
             choice2 = input("Want to catch Gastly instead or go to the Pond?\nType 'Gastly' for Gastly or 'Pond' for Pond: ")
             if choice2 in gastly:
                 from Gastly import Gastly_Option
+                print(Gastly_Option)
             else:
                 return Zubat_Option()
             if choice2 in pond_return:
                 from Pond import Pond_Option
+                print(Pond_Option)
             else:
                 return Zubat_Option()
-Zubat_Option()
+print(Zubat_Option())
