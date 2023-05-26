@@ -33,10 +33,11 @@ def Go_Shop():
         print(" 5)  Lucky Egg ")
         print(" 6)  Pokeball (Normal)")
         time.sleep(y) 
-    else:
+    if user_request1 in N:
         print("Don't waste time here then ")
-        print("Go catach them all! ")
-purchase = input("Enter what you would like to purchase ")
+        print("Go catch them all! ")
+
+purchase = input("What you would like to purchase? ")
 if purchase in Ability_Shield:
     print(" You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
