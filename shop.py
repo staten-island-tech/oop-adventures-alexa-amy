@@ -3,7 +3,6 @@ from items import items
 x = 1
 y = 2 
 z = 3
-purchase = ("p")
 coins = 100 
 Y = ["Y", "y", "Yes", "yes"]
 N = ["N", "n", "No", "no"]
@@ -35,40 +34,44 @@ def Go_Shop():
         time.sleep(y) 
     else:
         print("Don't waste time here then ")
-        print("Go catach them all! ")
+        print("Go catch them all! ")
+
 purchase = input("Enter what you would like to purchase ")
 if purchase in Ability_Shield:
+    print("Returning to shop ... ")
+    time.sleep(z)
+    print(user_request1)
+else: 
     print(" You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
     user_request2 = input("     Would you like to purchase this item? ")
     if user_request2.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
-else: 
+    else:
+        print(user_request1)
+    
+if purchase in Berries:
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
-    
-if purchase in Berries:
+    time.sleep(y)
+else: 
     print(" You have selected berries ")
     print("     Use: Berries are a helpful source of healing for your pokemon, improving the overall stats. ")
     print("     Amount: 25 coins ")
     user_request3= input("     Would you like to purchase this item? ")
     if user_request3.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
-else: 
-    print("Returning to shop ... ")
-    time.sleep(z)
-    print(user_request1)
-    
 if purchase in Food:
+    
+else: 
     print(" You have selected food")
     print("     Use: Food is good for maintaing  ")
     print("     Amount: 25 coins ")
     user_request4 = input("     Would you like to purchase this item? ")
     if user_request4.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
-else: 
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
