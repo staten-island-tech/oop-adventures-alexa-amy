@@ -38,13 +38,17 @@ def Go_Shop():
         print("Don't waste time here then ")
         print("Go catach them all! ")
 Go_Shop()
+
+
+
 if purchase in Ability_Shield:
     print(" You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() in Y:
-        print(f"Current coins amount is", coins - 25 )
+    user_request2 = input("     Would you like to purchase this item? ")
+    if user_request2.upper() in Y:
+        print("New balance is", coins-25)
+    
 else: 
     print("Returning to shop ... ")
     time.sleep(z)
@@ -54,8 +58,8 @@ if purchase in Berries:
     print(" You have selected berries ")
     print("     Use: Berries are a helpful source of healing for your pokemon, improving the overall stats. ")
     print("     Amount: 25 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() == Y:
+    user_request3 = input("     Would you like to purchase this item? ")
+    if user_request3.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
 else: 
     print("Returning to shop ... ")
@@ -66,8 +70,8 @@ if purchase in Food:
     print(" You have selected food")
     print("     Use: Food is good for maintaing  ")
     print("     Amount: 25 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() == Y:
+    user_request4 = input("     Would you like to purchase this item? ")
+    if user_request4.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
 else: 
     print("Returning to shop ... ")
@@ -78,8 +82,8 @@ if purchase in Heal_Potion:
     print(" You have selected a Heal Potion")
     print("     Use: Heal potion is a good item for battling. When your pokemon is low on health, provide this delicious drink for them and their health increase ")
     print("     Amount: 45 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() == Y:
+    user_request5 = input("     Would you like to purchase this item? ")
+    if user_request5.upper() == Y:
         print(f"Current coins amount is" , coins - 45 )
 else: 
     print("Returning to shop ... ")
@@ -90,8 +94,8 @@ if purchase in Lucky_Egg:
     print(" You have selected a Lucky Egg ")
     print("     Use: Good for beginner Trainees. This special tiems helps boost XP  ")
     print("     Amount: 30 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() == Y:
+    user_request6 = input("     Would you like to purchase this item? ")
+    if user_request6.upper() == Y:
         print(f"Current coins amount is" , coins - 30 )
 else: 
     print("Returning to shop ... ")
@@ -102,8 +106,8 @@ if purchase in Pokeball:
     print(" You have selected a Pokeball ")
     print("     Use: Pokeballs are the basic need for catching Pokemons. Pokeballs(Normal) increase your chance of catching one. ")
     print("     Amount: 25 coins ")
-    user_request1 = input("     Would you like to purchase this item? ")
-    if user_request1.upper() == Y:
+    user_request7 = input("     Would you like to purchase this item? ")
+    if user_request7.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
 else: 
     print("Returning to shop ... ")
