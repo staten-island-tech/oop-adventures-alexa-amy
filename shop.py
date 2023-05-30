@@ -31,6 +31,7 @@ def Go_Shop():
         print(" 4)  Heal Potion ")
         print(" 5)  Lucky Egg ")
         print(" 6)  Pokeball (Normal)")
+<<<<<<< HEAD
         time.sleep(y) 
     if user_request1 in N:
         print("Don't waste time here then ")
@@ -42,11 +43,24 @@ if purchase in Ability_Shield:
     time.sleep(z)
     print(user_request1)
 else: 
+=======
+        time.sleep(y)
+        purchase = input("Enter what you would like to purchase ")
+    else:
+        print("Don't waste time here then ")
+        print("Go catach them all! ")
+Go_Shop()
+
+
+
+if purchase in Ability_Shield:
+>>>>>>> 20c8f1cb81da907c670d22dafac07afa9119c0d9
     print(" You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
     user_request2 = input("     Would you like to purchase this item? ")
     if user_request2.upper() in Y:
+<<<<<<< HEAD
         print(f"Current coins amount is" , coins - 25 )
     
 """ if purchase in Berries:
@@ -54,13 +68,31 @@ else:
     print("     Use: Berries are a helpful source of healing for your pokemon, improving the overall stats. ")
     print("     Amount: 25 coins ")
     user_request3= input("     Would you like to purchase this item? ")
+=======
+        print("New balance is", coins-25)
+    
+else: 
+    print("Returning to shop ... ")
+    time.sleep(z)
+    print(user_request1)
+    
+if purchase in Berries:
+    print(" You have selected berries ")
+    print("     Use: Berries are a helpful source of healing for your pokemon, improving the overall stats. ")
+    print("     Amount: 25 coins ")
+    user_request3 = input("     Would you like to purchase this item? ")
+>>>>>>> 20c8f1cb81da907c670d22dafac07afa9119c0d9
     if user_request3.upper() == Y:
         print(f"Current coins amount is" , coins - 25 )
 else: 
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
+<<<<<<< HEAD
     time.sleep(y)
+=======
+    
+>>>>>>> 20c8f1cb81da907c670d22dafac07afa9119c0d9
 if purchase in Food:
     print(" You have selected food")
     print("     Use: Food is good for maintaing  ")
@@ -108,5 +140,9 @@ else:
     print("Returning to shop ... ")
     time.sleep(z)
     print(user_request1)
+<<<<<<< HEAD
 pokeballs = print(" You have selected Pokeball ") """
+=======
+""" pokeballs = print(" You have selected Pokeball ") """
+>>>>>>> 20c8f1cb81da907c670d22dafac07afa9119c0d9
 
