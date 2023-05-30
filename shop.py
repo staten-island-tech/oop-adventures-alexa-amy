@@ -12,7 +12,7 @@ Food = ["Food" , "food" "3"]
 Heal_Potion = ["Heal Potion" , "heal potion" , "4"]
 Lucky_Egg = ["Lucky Egg" , "lucky egg" , "5"]
 Pokeball = ["Pokeball", "pokeball" , "6"]
-
+purchase = input("Enter what you would like to purchase ")
 """ p1 = Person("John", 36)
 
 print(p1.name)
@@ -31,27 +31,12 @@ def Go_Shop():
         print(" 4)  Heal Potion ")
         print(" 5)  Lucky Egg ")
         print(" 6)  Pokeball (Normal)")
-
         time.sleep(y) 
-    if user_request1 in N:
+        print(purchase)
+    else:
         print("Don't waste time here then ")
         print("Go catch them all! ")
 Go_Shop()
-
-purchase = input("Enter what you would like to purchase ")
-if purchase in Ability_Shield:
-    print("Returning to shop ... ")
-    time.sleep(z)
-    print(user_request1)
-else: 
-        time.sleep(y)
-        purchase = input("Enter what you would like to purchase ")
-    else:
-        print("Don't waste time here then ")
-        print("Go catach them all! ")
-Go_Shop()
-
-
 
 if purchase in Ability_Shield:
     print(" You have selected an Ability Shield")
