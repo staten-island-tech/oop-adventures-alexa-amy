@@ -15,7 +15,7 @@ continue2 = ["Continue", "continue"]
 coins = 100
 x = True
 
-print("This is the Go Shop, life of paradise for the need of your pokemon(s) ")
+print("-------\nThis is the Go Shop, life of paradise for the need of your pokemon(s) ")
 time.sleep(y)
 user_request1 = input("Would you like to purchase fellow Trainee? ")
 time.sleep(y)
