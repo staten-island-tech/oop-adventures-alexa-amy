@@ -28,11 +28,12 @@ def Battle():
                 user_health = user_health - 40
                 time.sleep(1.5)
                 print("Your Pokemon health",user_health)
-            if random.choice(op1) == "Missed AHHAHAHA":
-                print("Mr. Whalen uses bite")
-                user_health = user_health - 25
-                time.sleep(1.5)
-                print("Your Pokemon health",user_health)
+            else:
+                if random.choice(op1) == "Missed AHHAHAHA":
+                    print("Mr. Whalen uses bite")
+                    user_health = user_health - 25
+                    time.sleep(1.5)
+                    print("Your Pokemon health",user_health)
         
         if attack_request == "2": 
             time.sleep(1.5)
@@ -61,7 +62,7 @@ def Battle():
             if battle_again in op4:
                 return Battle
             elif battle_again in op5:
-                from shop import Go_Shop
+                import shop
         if(w_health) == 0:
             print("You beat Mr. Whalen! Congrats")
             w_health = False
