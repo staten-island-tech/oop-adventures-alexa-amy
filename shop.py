@@ -1,6 +1,5 @@
 import time 
 from items import items
-
 x = 1
 y = 2 
 z = 3
@@ -41,7 +40,7 @@ Go_Shop()
 
 
 
-if purchase in Ability_Shield:
+while purchase in Ability_Shield:
     print(" You have selected an Ability Shield")
     print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
     print("     Amount: 25 coins ")
