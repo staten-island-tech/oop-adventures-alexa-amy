@@ -30,10 +30,9 @@ def Go_Shop():
         purchase = input("Enter what you would like to purchase ")
         print(purchase) 
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
-            q = input("Would you like to continue? Y/N: ")
+            q = input("Would you like to continue shopping? Y/N: ")
             if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
                 x = False
                 return Go_Shop()
@@ -46,7 +45,6 @@ def Go_Shop():
         if user_request2.upper() in Y:
             print("New balance is", coins - 25)
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
@@ -63,7 +61,6 @@ def Go_Shop():
         if user_request3.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
@@ -80,7 +77,6 @@ def Go_Shop():
         if user_request4.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
@@ -97,7 +93,6 @@ def Go_Shop():
         if user_request5.upper() == Y:
             print(f"Current coins amount is" , coins - 45 )
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
@@ -114,7 +109,6 @@ def Go_Shop():
         if user_request6.upper() == Y:
             print(f"Current coins amount is" , coins - 30 )
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
@@ -131,7 +125,6 @@ def Go_Shop():
         if user_request7.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
     else:
-        print("Would you like to continue shopping? Y/N: ")
         x = True    
         while x == True:
             q = input("Would you like to continue? Y/N: ")
