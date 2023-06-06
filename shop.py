@@ -30,8 +30,13 @@ def Go_Shop():
         purchase = input("Enter what you would like to purchase ")
         print(purchase) 
     else:
-        print("Don't waste time here then ")
-        print("Go catach them all! ")
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
 
     if purchase in Ability_Shield:
         print(" You have selected an Ability Shield")
@@ -39,12 +44,16 @@ def Go_Shop():
         print("     Amount: 25 coins ")
         user_request2 = input("     Would you like to purchase this item? ")
         if user_request2.upper() in Y:
-            print("New balance is", coins-25)
-    
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+            print("New balance is", coins - 25)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
     
     if purchase in Berries:
         print(" You have selected berries ")
@@ -53,10 +62,15 @@ def Go_Shop():
         user_request3 = input("     Would you like to purchase this item? ")
         if user_request3.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
     
     if purchase in Food:
         print(" You have selected food")
@@ -65,10 +79,15 @@ def Go_Shop():
         user_request4 = input("     Would you like to purchase this item? ")
         if user_request4.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
 
     if purchase in Heal_Potion:
         print(" You have selected a Heal Potion")
@@ -77,10 +96,15 @@ def Go_Shop():
         user_request5 = input("     Would you like to purchase this item? ")
         if user_request5.upper() == Y:
             print(f"Current coins amount is" , coins - 45 )
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
 
     if purchase in Lucky_Egg:
         print(" You have selected a Lucky Egg ")
@@ -89,10 +113,15 @@ def Go_Shop():
         user_request6 = input("     Would you like to purchase this item? ")
         if user_request6.upper() == Y:
             print(f"Current coins amount is" , coins - 30 )
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
 
     if purchase in Pokeball:
         print(" You have selected a Pokeball ")
@@ -101,9 +130,14 @@ def Go_Shop():
         user_request7 = input("     Would you like to purchase this item? ")
         if user_request7.upper() == Y:
             print(f"Current coins amount is" , coins - 25 )
-    else: 
-        print("Returning to shop ... ")
-        time.sleep(z)
-        print(user_request1)
+    else:
+        print("Would you like to continue shopping? Y/N: ")
+        x = True    
+        while x == True:
+            q = input("Would you like to continue? Y/N: ")
+            if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
+                x = False
+                return Go_Shop()
+
 
 Go_Shop()
