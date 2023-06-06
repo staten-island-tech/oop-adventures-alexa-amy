@@ -16,7 +16,7 @@ Pokeball = ["Pokeball", "pokeball" , "6"]
 def Go_Shop():
     print("-------\nThis is the Go Shop, life of paradise for the need of your pokemon(s) ")
     time.sleep(y)
-    user_request1 = input("Would you like to pruchase fellow Trainee? ")
+    user_request1 = input("Would you like to purchase fellow Trainee? ")
     time.sleep(y)
     if user_request1 in Y:
         print(" The items in stock are listed ")
@@ -33,15 +33,13 @@ def Go_Shop():
         print("Don't waste time here then ")
         print("Go catach them all! ")
 
-
-
-while purchase in Ability_Shield:
-    print(" You have selected an Ability Shield")
-    print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
-    print("     Amount: 25 coins ")
-    user_request2 = input("     Would you like to purchase this item? ")
-    if user_request2.upper() in Y:
-        print("New balance is", coins-25)
+    if purchase in Ability_Shield:
+        print(" You have selected an Ability Shield")
+        print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
+        print("     Amount: 25 coins ")
+        user_request2 = input("     Would you like to purchase this item? ")
+        if user_request2.upper() in Y:
+            print("New balance is", coins-25)
     
     else: 
         print("Returning to shop ... ")
