@@ -1,6 +1,5 @@
 import time 
 from items import items
-
 x = 1
 y = 2 
 z = 3
@@ -36,13 +35,13 @@ def Go_Shop():
 
 
 
-    if purchase in Ability_Shield:
-        print(" You have selected an Ability Shield")
-        print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
-        print("     Amount: 25 coins ")
-        user_request2 = input("     Would you like to purchase this item? ")
-        if user_request2.upper() in Y:
-            print("New balance is", coins-25)
+while purchase in Ability_Shield:
+    print(" You have selected an Ability Shield")
+    print("     Use: A one time use item, Helpful for defense in pokemon battles. It counters any attack with the opposing. ")
+    print("     Amount: 25 coins ")
+    user_request2 = input("     Would you like to purchase this item? ")
+    if user_request2.upper() in Y:
+        print("New balance is", coins-25)
     
     else: 
         print("Returning to shop ... ")
