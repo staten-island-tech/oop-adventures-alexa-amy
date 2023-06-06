@@ -1,5 +1,6 @@
 import time
 import random
+from shop import Go_Shop
 
 r = ["Y", "y", "Yes", "yes"]
 g = ["N", "No", "n", "no"]
@@ -62,7 +63,7 @@ def Battle():
             if battle_again in op4:
                 return Battle
             elif battle_again in op5:
-                import shop
+                Go_Shop()
         if(w_health) == 0:
             print("You beat Mr. Whalen! Congrats")
             w_health = False
