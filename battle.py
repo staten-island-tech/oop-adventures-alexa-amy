@@ -21,7 +21,6 @@ def Battle():
             print(random.choice(op1))
             if random.choice(op1) == "Good job! Mr.Whalen's pokemon hp dropped by 30!":
                 w_health = w_health - 30
-                time.sleep(1)
                 print("Mr. Whalen's Snorlax hp is",w_health)
                 time.sleep(1.5)
                 print("Mr. Whalen uses tackle\nYour Pokemon lost 40 hp")
@@ -29,11 +28,10 @@ def Battle():
                 time.sleep(1.5)
                 print("Your Pokemon health",user_health)
             else:
-                if random.choice(op1) == "Missed AHHAHAHA":
-                    print("Mr. Whalen uses bite")
-                    user_health = user_health - 25
-                    time.sleep(1.5)
-                    print("Your Pokemon health",user_health)
+                print("Mr. Whalen uses bite")
+                user_health = user_health - 25
+                time.sleep(1.5)
+                print("Your Pokemon health",user_health)
         
         if attack_request == "2": 
             time.sleep(1.5)
@@ -60,9 +58,10 @@ def Battle():
             time.sleep(1.5)
             battle_again = input("-------\nWould you like to battle Mr.Whalen again or go to the shop?\n'Battle' to try again or 'Shop' to go to the shop: ")
             if battle_again in op4:
-                return Battle
-            elif battle_again in op5:
+                return Battle()
+            elif():
                 import shop
+
         if(w_health) == 0:
             print("You beat Mr. Whalen! Congrats")
             w_health = False
