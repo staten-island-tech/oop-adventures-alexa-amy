@@ -6,6 +6,7 @@ zubat = ["Zubat", "zubat"]
 gastly = ["Gastly", "gastly"]
 pokeball = ["Pokeball", "pokeball"]
 greatball = ["Greatball", "greatball"]
+battle4 = ["BATTLE", "Battle", "battle"]
 x = True
 inventory = []
 
@@ -24,12 +25,14 @@ def Cave_Option():
         else:
             return Cave_Option()
     if user_request3 in g:
-        choice2 = input("Return to pond? Y/N: ")
+        choice2 = input("Return to pond or battle Mr.Whalen? Input 'Pond' for pond or 'Battle' to battle Mr.Whalen: ")
         if choice2 in r:
             from Pond import Pond_Option
             print(Pond_Option)
         else:
             return Cave_Option()
+        if choice2 in battle4:
+#sfdfs
     else:
         x = True
         while x == True:
