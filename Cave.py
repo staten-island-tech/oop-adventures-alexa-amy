@@ -32,7 +32,8 @@ def Cave_Option():
         else:
             return Cave_Option()
         if choice2 in battle4:
-#sfdfs
+            from battle import Battle
+            print(Battle)
     else:
         x = True
         while x == True:
