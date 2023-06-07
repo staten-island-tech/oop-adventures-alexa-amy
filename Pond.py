@@ -5,6 +5,7 @@ g = ["N", "No", "n", "no"]
 squirtle = ["Squirtle", "squirtle"]
 psyduck = ["Psyduck", "psyduck"]
 pokeball = ["Pokeball", "pokeball"]
+battle9 = ["Battle", "battle", "BATTLE"]
 x = True
 inventory = []
 
@@ -22,12 +23,15 @@ def Pond_Option():
         else:
             return Pond_Option()
     if user_request3 in g:
-        choice2 = input("Return to Cave? Y/N: ")
+        choice2 = input("Return to pond or battle Mr.Whalen? Input 'Pond' for pond or 'Battle' to battle Mr.Whalen: ")
         if choice2 in r:
-            from Cave import Cave_Option
-            print(Cave_Option)
+            from Pond import Pond_Option
+            print(Pond_Option)
         else:
             return Pond_Option()
+        if choice2 in battle9:
+            from battle import Battle
+            print(Battle)
     else:
         x = True    
         while x == True:
