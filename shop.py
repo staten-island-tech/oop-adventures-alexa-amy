@@ -100,7 +100,6 @@ def Go_Shop():
                 x = False
                 return Go_Shop()
 
-
     if purchase in Lucky_Egg:
         print("You have selected a Lucky Egg ")
         print("     Use: Good for beginner Trainees. This special tiems helps boost XP  ")
@@ -115,7 +114,6 @@ def Go_Shop():
             if (q== "Y" or q== "Yes" or q=="y" or q=="yes"):
                 x = False
                 return Go_Shop()
-
 
     if purchase in Pokeball:
         print("You have selected a Pokeball ")
