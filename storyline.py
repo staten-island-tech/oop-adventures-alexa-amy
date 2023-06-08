@@ -26,7 +26,7 @@ def Forest_Start():
     Forest_Request = input("-------\nWould you like to enter Eterna Forest? Y/N: ")
     if Forest_Request in r:
         time.sleep(1)
-        print("-------\nYou enter the Eterna Forest and see many wild pokemon surrounding the area..")
+        print("-------\nYou enter Eterna Forest and see many wild pokemon surrounding the area..")
         time.sleep(2)
         print("You look around the area and notice there is a pond ahead, and a cave.")
         time.sleep(1.5)
