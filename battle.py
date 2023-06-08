@@ -62,6 +62,7 @@ def Battle():
             elif battle_again in op5:
                 from shop import Go_Shop
                 print(Go_Shop)
+        
         if(w_health) == 0:
             print("You beat Mr. Whalen! Congrats")
             w_health = False
