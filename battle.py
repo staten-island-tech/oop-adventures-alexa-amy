@@ -13,7 +13,9 @@ def Battle():
     w_health = 100
     time.sleep(1.5)
     while w_health > 0:
-        attack_request = input("-------\nChoose your move Trainee\n1) Attack Mr.Whalen's Snorlax\n2) Abide\n3) Healing\nEnter the corresponding number:  ")
+        print("-------\nWelcome to your final test! Battle Mr.Whalen!")
+        time.sleep(2)
+        attack_request = input("-------\nChoose your move Trainee:\n1) Attack Mr.Whalen's Snorlax\n2) Abide\n3) Healing\nEnter the corresponding number:  ")
         if attack_request == "1":
             print(random.choice(op1))
             if random.choice(op1) == "Good job! Mr.Whalen's pokemon hp dropped by 30!":
