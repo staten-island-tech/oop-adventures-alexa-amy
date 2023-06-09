@@ -10,7 +10,6 @@ cave_return = ["Cave", "cave"]
 pond_return = ["Pond", "pond"]
 battle5 = ["Battle", "battle", "BATTLE", "b"]
 gotoshop = ["Shop", "shop", "SHOP", "s"]
-inventory = []
 x = True
 
 def Zubat_Option():
@@ -38,7 +37,6 @@ def Zubat_Option():
             print("...")
             time.sleep(1.5)
             print("You have successfully captured Zubat!")
-            inventory.append("Zubat")
             end = input("Would you like to battle or go to the shop? Type 'Battle' or 'Shop': ")
             if end in battle5:
                 from battle import Battle
@@ -53,7 +51,6 @@ def Zubat_Option():
             print("...")
             time.sleep(1.5)
             print("You have successfully captured Zubat!")
-            inventory.append("Zubat")
             end = input("Would you like to battle or go to the shop? Type 'Battle' or 'Shop': ")
             if end in battle5:
                 from battle import Battle
