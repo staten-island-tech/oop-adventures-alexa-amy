@@ -7,6 +7,8 @@ gastly = ["Gastly", "gastly"]
 pokeball = ["Pokeball", "pokeball"]
 greatball = ["Greatball", "greatball"]
 pond_return = ["Pond", "pond"]
+battle5 = ["Battle", "battle", "BATTLE", "b"]
+gotoshop = ["Shop", "shop", "SHOP", "s"]
 inventory = []
 x = True
 
@@ -36,6 +38,13 @@ def Gastly_Option():
             time.sleep(1.5)
             print("You have successfully captured Gastly!")
             inventory.append("Gastly")
+            end = input("Would you like to battle or go to the shop? Type 'Battle' or 'Shop': ")
+            if end in battle5:
+                from battle import Battle
+                print(Battle())
+            if end in gotoshop:
+                from shop import Go_Shop
+                print(Go_Shop())
         if user_request6 in greatball:
             print("------\nYou now have 3x Greatballs remaining")
             print("You throw your Greatball at Gastly..")
@@ -44,7 +53,13 @@ def Gastly_Option():
             time.sleep(1.5)
             print("You have successfully captured Gastly!")
             inventory.append("Gastly")
-            
+            end = input("Would you like to battle or go to the shop? Type 'Battle' or 'Shop': ")
+            if end in battle5:
+                from battle import Battle
+                print(Battle())
+            if end in gotoshop:
+                from shop import Go_Shop
+                print(Go_Shop())
         if user_request5 in g:
             choice2 = input("Want to catch Zubat instead or go to the Pond?\nType 'Zubat' for Zubat or 'Pond' for Pond: ")
             if choice2 in zubat:
